@@ -27,4 +27,18 @@ pub mod anchor_escrow {
         ctx.accounts.deposit()?;
         ctx.accounts.withdraw_and_close_vault()
     }
+
+    //   // Function to claim funds after timeout  
+    //   pub fn claim_funds(ctx: Context<ClaimFunds>) -> Result<()> {  
+    //     let escrow = &mut ctx.accounts.escrow;  
+
+    //     // Assume some verification of timeout here  
+    //     if Clock::get()?.unix_timestamp < escrow.timeout {  
+    //         return Err(ErrorCode::ClaimFailed.into());  
+    //     }  
+        
+    //     ctx.accounts.refund_and_close_vault()?;  
+    //     emit!(FundsClaimed {});  
+    //     Ok(())  
+    // }  
 }
