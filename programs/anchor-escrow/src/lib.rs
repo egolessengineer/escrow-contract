@@ -28,6 +28,21 @@ pub mod anchor_escrow {
         ctx.accounts.withdraw_and_close_vault()
     }
 
+        // // Function to update deposit amounts  
+        // pub fn update_deposit_amount(  
+        //     ctx: Context<UpdateDeposit>,  
+        //     new_initializer_amount: u64,  
+        //     new_taker_amount: u64,  
+        // ) -> Result<()> {  
+        //     ctx.accounts.update_escrow(new_initializer_amount, new_taker_amount)?;  
+        //     emit!(DepositUpdated {  
+        //         new_initializer_amount,  
+        //         new_taker_amount,  
+        //     });  
+        //     Ok(())  
+        // }  
+    
+
     //   // Function to claim funds after timeout  
     //   pub fn claim_funds(ctx: Context<ClaimFunds>) -> Result<()> {  
     //     let escrow = &mut ctx.accounts.escrow;  
